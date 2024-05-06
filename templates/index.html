@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style/style.css">
+    <title>000</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <style>
+    </style>
+    <script src="static/script/header.js"></script>
+</head>
+<body>
+    
+    <div id="splash">
+        <center>
+            <div id="splash2">
+                    <div id="splashText"></div>
+            </div>
+        </center>
+    </div>
+
+    <div id="wizard">
+        <table id="wizard_table"><tr><td id="wizard_body"><div id="wizard_bodyx"></div><div id='naver'></div>
+            <div id="hidden">
+                <div id='upload'>  <div id='uplad_title'>Upload Ontology</div>  <form id='uploadFile' method='post' enctype='multipart/form-data'>    <input type='file' id='file' name='file'>        <label for='file'>      <div id='ontologySelect'>        <span id='ontologySelectA'>Select Ontology file</span>        <div id='ontologySelect2'>          <span id='ontologySelect2A'> </span>        </div>      </div>    </label>    <div id='ontologyUpload' >Upload</div>  </form>  <div id='uplad_status'></div></div>
+            </div>
+        </td></tr><tr><td id="wizard_footer"></td></tr></table>
+        <table style="background: rgba(0, 0, 0, 0.1); padding:10px; border-radius: 10px;"><tr><td style="width: 50%; vertical-align: top;">
+            <div href='http://www.w3.org/TR/' class='TUlogo2'></div>
+            <div href='http://www.w3.org/TR/' class='TUlogo'></div>
+            <div class="TUname">Technische Universität Chemnitz</div>
+        </td>
+        <td>
+            <div class="right">
+                stats for nerds <br> <!--<span onclick='pager(10)' class="font-s pointer">view nodes </span> &bull; --><span onclick='pager(11)' class="font-s pointer" pointer>view ontology </span> &bull; <span onclick='pager(12)' class="font-s pointer"> all concepts</span>
+            </div>
+        </td></tr></table>
+    </div>
+    
+    <div id="viewOnt">
+        Check back after uploading ontology
+        <div onclick='pager(11)' id="popCloser">&#10006;</div>
+    </div>
+    <div id="viewNodes">
+        Check back after uploading ontology
+        <svg height='1000' width='1000' id='ourSVG' style=' position:absolute;'></svg>
+        <div onclick='pager(10)' id="popCloser">&#10006;</div><br>
+    </div>
+    <div id="convoCells">
+        Check back after uploading ontology
+        <div onclick='pager(11)' id="popCloser">&#10006;</div>
+    </div>
+    
+    <div id="allConceptors">
+        Check back after uploading ontology
+        <div onclick='pager(12)' id="popCloser">&#10006;</div>
+    </div>
+
+    
+    <div id="tester">
+        
+
+        <div onclick='pager(13)' id="popCloser">&#10006;</div>
+    </div>
+    
+    <script src="static/script/app.js"></script>
+
+</body>
+</html>
